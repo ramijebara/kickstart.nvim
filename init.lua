@@ -172,6 +172,10 @@ do
   -- See `:help 'confirm'`
   vim.o.confirm = true
 
+  -- Enable spell-checker
+  vim.o.spell = true
+  vim.o.spelllang = 'en_us'
+
   -- [[ Basic Keymaps ]]
   --  See `:help vim.keymap.set()`
 
@@ -964,7 +968,7 @@ do
   -- require 'kickstart.plugins.indent_line'
   -- require 'kickstart.plugins.lint'
   -- require 'kickstart.plugins.autopairs'
-  -- require 'kickstart.plugins.neo-tree'
+  require 'kickstart.plugins.neo-tree'
   -- require 'kickstart.plugins.gitsigns' -- adds gitsigns recommended keymaps
 
   -- NOTE: You can add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
